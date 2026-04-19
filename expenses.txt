@@ -1,0 +1,4 @@
+Gas , 50
+Food , 20
+Taxi, 15
+Gas , 30
