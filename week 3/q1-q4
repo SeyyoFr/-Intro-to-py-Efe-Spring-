@@ -1,0 +1,62 @@
+import random
+numbers = []
+
+for i in range(20):
+    numbers.append(random.randint(1, 100))
+print("Numbers:", numbers)
+
+total_even = 0
+
+for number in numbers:
+    if number % 2 == 0:
+        total_even = total_even + number
+
+print("Total:", total_even)
+
+second = []
+
+for i in range(20):
+    second.append(random.randint(1, 100))
+
+print(second)
+
+for num in second:
+    if num in numbers:
+        print(num)
+
+
+data = [
+    [2020, 2.3, 2.2, 1.8, 3.1],
+    [2021, 2.4, 2.0, 1.7, 3.0],
+    [2022, 1.7, 1.2, 1.0, 1.8],
+    [2023, 1.9, 1.0, 0.7, 2.0],
+    [2024, 2.0, 2.4, 2.0, 3.2]
+]
+for row in data:
+    year = row[0]
+    total = row[1] + row[2] + row[3] + row[4]
+print(year, total)
+
+for row in data:
+    year = row[0]
+    total = row[1] + row[2] + row[3] + row[4]
+print(year, total)
+
+for row in data:
+    year = row[0]
+    total = row[1] + row[2] + row[3] + row[4]
+    avg = total / 4
+print(year, avg)
+
+for row in data:
+    year = row[0]
+    sales = row[1:]
+
+    max_sale = max(sales)
+    min_sale = min(sales)
+
+    max_quarter = sales.index(max_sale) + 1
+    min_quarter = sales.index(min_sale) + 1
+
+print(year, max_quarter, max_sale, min_quarter, min_sale)
+   
